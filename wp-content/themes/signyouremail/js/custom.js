@@ -464,8 +464,6 @@ function readURLbanner(input) {
 
 $("body").on('change', '.bannerimg', function() {
   readURLbanner(this);
-});
-
-$("body").on('change', '.bannerimg', function() {
+  readURLbanner(this);
   readURLbanner(this);
 });
