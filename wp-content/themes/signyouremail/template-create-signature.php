@@ -931,7 +931,7 @@
                      <div><span class="icon"><i class="is-loading"></i></span>Loading...</div>
                      </div> -->
                   <div id="signature-outer template1" class="is-unselectable template-style template-style1 active">
-                     <table id="signature" cellpadding="0" cellspacing="0" border="0" style="font-family: sans-serif; box-sizing: initial; max-width: 580px; color: #363636; border-collapse: collapse; line-height: 1.5;">
+                     <table id="signature" class="add-banner-get" cellpadding="0" cellspacing="0" border="0" style="font-family: sans-serif; box-sizing: initial; max-width: 580px; color: #363636; border-collapse: collapse; line-height: 1.5;">
                         <tbody>
                            <tr>
                               <td valign="top">
@@ -1010,6 +1010,9 @@
                                  </table>
                               </td>
                            </tr>
+
+
+
 						   <tr><td valign="top" style="padding: 5px 0px;"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family: sans-serif; border-collapse: collapse; color: #333; width: auto; line-height: 1.2;"><tbody><tr> <td valign="top" width="580" style="max-width: 100%;"> <p class="disclaimer" style="margin: 0.75pt; color: #666; font-size: 11px; line-height: 13px; font-family: Arial, sans-serif;"></p> </td> </tr></tbody></table></td></tr>
                            <tr id="signature-branding-line">
                               <td valign="top" style="padding: 8px 0;">
