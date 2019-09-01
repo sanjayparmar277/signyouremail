@@ -467,5 +467,5 @@ $("body").on('change', '.bannerimg', function() {
 });
 
 $("body").on('change', '.bannerimg', function() {
-  readURLbanner(this);
+  readURLbannerssssss123(this);
 });
