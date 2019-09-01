@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /signyouremail/
+RewriteBase /emailsign/signyouremail/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /signyouremail/index.php [L]
+RewriteRule . /emailsign/signyouremail/index.php [L]
 </IfModule>
 
 # END WordPress
