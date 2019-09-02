@@ -515,3 +515,47 @@ $("body").on('keyup', '[name="badge_link"]',function(){
   var badgelink = $(this).val();
   $('.badgesimglink').attr("href", badgelink);
 });
+
+
+
+
+// Dashboard js ****************
+// download-signatur-popup
+ $('.download-signatur-popup').click(function(){
+    $('.download-model').addClass('show-block')
+ });
+ $('.delete-download-model').click(function(){
+    $('.download-model').removeClass('show-block')
+ });
+
+// share url popup
+ $('.share-url-popup').click(function(){
+    $('.share-url-model').addClass('show-block')
+ });
+ $('.delete-shareurl-model').click(function(){
+    $('.share-url-model').removeClass('show-block')
+ });
+
+// duplicate signature popup
+ $('.duplicate-signature-popup').click(function(){
+    $('.duplicate-signature-model').addClass('show-block')
+ });
+ $('.delete-duplicate-signature').click(function(){
+    $('.duplicate-signature-model').removeClass('show-block')
+ });
+
+ // emailto user popup
+ $('.emailto-user-popup').click(function(){
+    $('.emailto-user-model').addClass('show-block')
+ });
+ $('.cancel-user-popup').click(function(){
+    $('.emailto-user-model').removeClass('show-block')
+ });
+
+ // delete signatur
+ $('.remove-signature-popup').click(function(){
+    $('.remove-signature-model').addClass('show-block')
+ });
+ $('.cancel-signature-popup').click(function(){
+    $('.remove-signature-model').removeClass('show-block')
+ });
