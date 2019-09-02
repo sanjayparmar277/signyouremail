@@ -12,6 +12,20 @@
 <form enctype='multipart/form-data' class="signature-form" action="<?php echo admin_url('admin-ajax.php'); ?>">
 
 <div id="generator">
+   <div class="columns is-mobile is-multiline is-gapless"><?php
+/**
+ * Template Name: Create Signature
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package signyouremail
+ */
+?>
+<?php  echo get_header(); ?>
+
+<form enctype='multipart/form-data' class="signature-form" action="<?php echo admin_url('admin-ajax.php'); ?>">
+
+<div id="generator">
    <div class="columns is-mobile is-multiline is-gapless">
       <div class="column is-12-mobile is-12-tablet is-6-desktop">
          <div class="generator-fields">
@@ -870,6 +884,13 @@
          <div class="signature-preview">
             <div class="signature-controls columns is-mobile">
                <div class="column is-narrow is-half">
+			   <?php 
+				  global $wpdb, $user;
+				  $table_name = $wpdb->prefix . "signatures";
+				  $userId = get_current_user_id();
+				  $signature = $wpdb->get_results( "SELECT * FROM $table_name where user_id = $userId" );
+				  echo"<pre>"; print_r($signature);
+			   ?>
                   <div class="field">
                      <label class="label">Signatures:</label>
                      <p class="control">
@@ -931,7 +952,7 @@
                      <div><span class="icon"><i class="is-loading"></i></span>Loading...</div>
                      </div> -->
                   <div id="signature-outer template1" class="is-unselectable template-style template-style1 active">
-                     <table id="signature" class="add-banner-get" cellpadding="0" cellspacing="0" border="0" style="font-family: sans-serif; box-sizing: initial; max-width: 580px; color: #363636; border-collapse: collapse; line-height: 1.5;">
+                     <table id="signature" cellpadding="0" cellspacing="0" border="0" style="font-family: sans-serif; box-sizing: initial; max-width: 580px; color: #363636; border-collapse: collapse; line-height: 1.5;">
                         <tbody>
                            <tr>
                               <td valign="top">
@@ -1010,9 +1031,6 @@
                                  </table>
                               </td>
                            </tr>
-
-
-
 						   <tr><td valign="top" style="padding: 5px 0px;"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family: sans-serif; border-collapse: collapse; color: #333; width: auto; line-height: 1.2;"><tbody><tr> <td valign="top" width="580" style="max-width: 100%;"> <p class="disclaimer" style="margin: 0.75pt; color: #666; font-size: 11px; line-height: 13px; font-family: Arial, sans-serif;"></p> </td> </tr></tbody></table></td></tr>
                            <tr id="signature-branding-line">
                               <td valign="top" style="padding: 8px 0;">
