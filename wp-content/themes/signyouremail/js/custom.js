@@ -559,3 +559,19 @@ $("body").on('keyup', '[name="badge_link"]',function(){
  $('.cancel-signature-popup').click(function(){
     $('.remove-signature-model').removeClass('show-block')
  });
+
+  // save signature and open mode this code
+ $('.save-install-button').click(function(){
+    $('.save-model-show').addClass('show-block')
+ });
+ $('.save-model-close').click(function(){
+    $('.save-model-show').removeClass('show-block')
+ });
+
+ // save genrater  and open mode this code
+ $('.save-install-button1').click(function(){
+    $('.save-genrater-model-show').addClass('show-block')
+ });
+ $('.save-genrater-model-close').click(function(){
+    $('.save-genrater-model-show').removeClass('show-block')
+ });

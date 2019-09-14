@@ -1777,7 +1777,7 @@
                   <a class="button is-success is-medium is-fullwidth is-expanded is-uppercase save-install-button" name="save_and_install"><span class="icon"><i class="icon-floppy-o"></i></span> <span>Save &amp; Install Signature</span></a>
                </div>
                <div class="column is-12 is-5-widescreen">
-                  <a name="save_as_generator" class="button is-dark is-medium is-fullwidth is-uppercase save-install-button"><span class="icon"><i class="icon-floppy-o"></i></span> <span>Save As Generator</span></a>
+                  <a name="save_as_generator" class="button is-dark is-medium is-fullwidth is-uppercase save-install-button1"><span class="icon"><i class="icon-floppy-o"></i></span> <span>Save As Generator</span></a>
                </div>
             </div>
             <span class="help is-size-6 has-text-right">Need Help? <a href="mailto:support@signmyemails.com" class="has-text-underlined has-text-info">Contact Us</a></span>
@@ -2005,6 +2005,168 @@
    <!-- Custom action hidden field -->
    <input type="hidden" name="action" value="custom_action">
 </form>
+
+
+
+<!-- Save and open model -->
+<div class="modal is-active is-large save-model-show" style="display: none;">
+    <div class="modal-card save-model-show" style="display: none;">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Install Signature</p>
+            <button class="delete save-model-close"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="notification is-success is-small"><span class="icon"><i class="icon-check"></i></span> <span>Signature Saved Successfully!</span></div>
+            <!---->
+            <iframe src="/signatures/18871/render?var=1568448655063" class="signature-iframe"></iframe>
+            <div class="how-to-install">
+                <div>
+                    <p><strong>Please select your email client to install your signature:</strong></p>
+                    <div class="columns is-multiline is-gapless is-mobile">
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/outlook.png" alt="Outlook"></div> <span>Outlook</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/apple-mail.png" alt="Apple Mail"></div> <span>Apple Mail</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/gmail.png" alt="Gmail"></div> <span>Gmail</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/mail-app-iphone.png" alt="Mail App iPhone"></div> <span>Mail App iPhone</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/thunderbird.png" alt="Thunderbird"></div> <span>Thunderbird</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/yahoo-mail.png" alt="Yahoo Mail"></div> <span>Yahoo Mail</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/godaddy.png" alt="Godaddy"></div> <span>Godaddy</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/inbox-by-gmail.png" alt="Inbox by Gmail"></div> <span>Inbox by Gmail</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/airmail.png" alt="Airmail"></div> <span>Airmail</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/spark.png" alt="Spark"></div> <span>Spark</span></div>
+                        </div>
+                        <div class="column is-2-desktop is-3-tablet is-half-mobile">
+                            <div class="email-client-block">
+                                <div class="email-client-image-block"><img src="https://cdn.signmyemails.com/images/email_clients/other.png" alt="Other"></div> <span>Other</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message is-warning">
+                <div class="message-body">
+                    <p><span><strong>Note:</strong> Free users must keep the "Email Signature by SignMyEmails" branding.</span> &nbsp;
+                        <a class="button is-small is-warning"><span class="icon"><i class="icon-close"></i></span> <span>Remove Branding</span></a></p>
+                </div>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+            <div class="columns is-gapless is-fullwidth is-mobile">
+                <div class="column"><a href="/signatures/null/edit" class="button"><span class="icon"><i class="icon-pencil"></i></span> <span>Edit</span></a> <a class="button"><span class="icon"><i class="icon-copy"></i></span> <span>Duplicate</span></a></div>
+                <div class="column is-narrow"><span class="button is-success"><span class="icon"><i class="icon-check"></i></span> <span>Done</span></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!-- Save genrater popup -->
+<div class="modal is-active save-genrater-model-show" style="display: none;">
+    <div class="modal-card save-genrater-model-show" style="display: none;">
+        <header class="modal-card-head">
+            <p class="modal-card-title">
+                Upgrade To A Pro Account
+            </p>
+            <button class="delete save-genrater-model-close"></button>
+        </header>
+        <section class="modal-card-body">
+            <!---->
+            <div class="plans-length has-text-centered"><span class="">Monthly</span>
+                <input type="checkbox" id="switch" checked="checked" class="switch-box">
+                <label for="switch" class="switch">Toggle</label> <span class="active">
+                Yearly <span class="annual-save-text has-text-primary">(Save 40%)</span></span>
+            </div>
+            <div class="columns is-desktop has-text-centered plans">
+                <div class="column is-12 plan">
+                    <div class="price-block">
+                        <h3 class="title is-4 plan-name is-spaced">Pro</h3>
+                        <p class="title is-2">$3.99<span class="is-size-5">/mo</span></p>
+                        <p class="subtitle is-5">Billed yearly</p>
+                        <div class="field">
+                            <div class="control has-text-centered">
+                                <div class="select is-medium">
+                                    <select>
+                                        <!---->
+                                        <!---->
+                                        <option value="pro-5-yearly">
+                                            5 Signatures
+                                        </option>
+                                        <!---->
+                                        <option value="pro-10-yearly">
+                                            10 Signatures
+                                        </option>
+                                        <!---->
+                                        <option value="pro-25-yearly">
+                                            25 Signatures
+                                        </option>
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <option value="pro-50-yearly">
+                                            50 Signatures
+                                        </option>
+                                        <!---->
+                                        <option value="pro-100-yearly">
+                                            100 Signatures
+                                        </option>
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <option value="pro-unlimited-yearly">
+                                            Unlimited Signatures
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br> <a class="button is-primary is-medium has-extra-padding">Upgrade</a></div>
+                    <div>
+                        <ul class="plan-features">
+                            <li><span class="icon has-text-primary"><i class="icon-check"></i></span> <span>Unlock All Pro Features</span></li>
+                            <li><span class="icon has-text-primary"><i class="icon-check"></i></span> <span>Ability To Duplicate Signatures</span></li>
+                            <li><span class="icon has-text-primary"><i class="icon-check"></i></span> <span>Ability To Create Generators</span></li>
+                            <li><span class="icon has-text-primary"><i class="icon-check"></i></span> <span>Download Signatures</span></li>
+                            <li><span class="icon has-text-primary"><i class="icon-check"></i></span> <span>Remove Signmyemails Branding</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="message is-primary">
+                <p class="message-body has-text-centered"><strong>7 Days Money-Back Guarantee.</strong> No Questions Asked.
+                </p>
+            </div>
+        </section>
+        <!---->
+    </div>
+</div>
+
 
 <script type="text/javascript">
    
